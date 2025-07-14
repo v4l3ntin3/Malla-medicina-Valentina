@@ -15,9 +15,12 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
 
 section {
+  width: 100%;
+  max-width: 500px;
   border: 2px solid #f4c2d7;
   border-radius: 10px;
   padding: 15px;
@@ -39,6 +42,8 @@ section h2 {
 }
 
 button.ramo {
+  width: 100%;
+  height: 50px;
   padding: 10px;
   font-size: 13px;
   border-radius: 8px;
@@ -47,6 +52,10 @@ button.ramo {
   background-color: #f8c5da;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 button.ramo.bloqueado {
