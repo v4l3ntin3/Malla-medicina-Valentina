@@ -13,25 +13,21 @@ h1 {
 
 #malla {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 20px;
-  padding-bottom: 20px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 section {
-  min-width: 220px;
   border: 2px solid #f4c2d7;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   background-color: #ffe6f0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  flex-shrink: 0;
 }
 
 section h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
   color: #d14b8f;
   text-align: center;
 }
