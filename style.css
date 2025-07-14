@@ -12,19 +12,44 @@ h1 {
 }
 
 #malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+section {
+  min-width: 220px;
+  border: 2px solid #f4c2d7;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffe6f0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d14b8f;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 button.ramo {
   padding: 10px;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   background-color: #f8c5da;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease;
 }
 
