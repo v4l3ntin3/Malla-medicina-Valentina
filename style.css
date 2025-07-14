@@ -1,1 +1,40 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  padding: 20px;
+  color: #333;
+}
 
+h1 {
+  color: #c71585;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+button.ramo {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #f8c5da;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+button.ramo.bloqueado {
+  background-color: #f5e1eb;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+button.ramo.aprobado {
+  background-color: #e75480;
+  color: white;
+}
